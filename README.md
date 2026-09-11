@@ -152,4 +152,5 @@ git push origin main      # Git Credential Manager подставит сохра
 ```
 
 GitHub Pages собирает ветку `main` автоматически (1–2 минуты), сайт: `https://rry48.github.io/bspb-career-site/`.
+Ассеты кешируются на 10 минут — если правки не видны, обновите страницу с Ctrl+F5.
 
