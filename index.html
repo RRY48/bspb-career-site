@@ -3,32 +3,68 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Кейс: карьерный сайт банка «Санкт-Петербург» — Иностудио</title>
-<meta name="description" content="Как команда «Иностудио» разработала карьерный сайт банка «Санкт-Петербург»: путь кандидата от знакомства до отклика, геймификация, интеграция с CRM Skillaz и развёртывание в защищённом контуре банка.">
-<meta property="og:title" content="Карьерный сайт банка «Санкт-Петербург» — кейс «Иностудио»">
+<title>Кейс: карьерный сайт банка «Санкт-Петербург» — .иностудио</title>
+<meta name="description" content="Как команда Иностудио разработала карьерный сайт банка «Санкт-Петербург»: путь кандидата от знакомства до отклика, геймификация, интеграция с CRM Skillaz и развёртывание в защищённом контуре банка.">
+<meta property="og:title" content="Карьерный сайт банка «Санкт-Петербург» — кейс Иностудио">
 <meta property="og:description" content="Собственный карьерный сайт вместо зависимости от job-бордов: полный цикл взаимодействия с кандидатом и автоматизация HR-процессов.">
+<meta name="theme-color" content="#3c3c3b">
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+<!-- прелоадер -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__mark">
+    <span class="preloader__ring"></span>
+    <span>.иностудио</span>
+  </div>
+</div>
+
 <div class="progress" id="progress" aria-hidden="true"></div>
 
-<header class="topbar">
+<header class="topbar" id="topbar">
   <div class="container topbar__inner">
-    <a class="brand" href="#top">
-      <span class="brand__mark">ИС</span>
-      Иностудио
-      <span class="brand__note">кейс</span>
+    <a class="brand" href="#top" aria-label=".иностудио — к началу кейса">
+      <span class="brand__mono" aria-hidden="true">
+        <svg viewBox="0 0 44 44" width="34" height="34" fill="none">
+          <circle cx="22" cy="22" r="20" stroke="#3c3c3b" stroke-width="2" opacity="0.25"/>
+          <circle cx="13" cy="13" r="4" fill="#e4003a"/>
+          <path d="M9 33V21a6.5 6.5 0 0 1 13 0v12" stroke="#3c3c3b" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="33" cy="27" r="6" stroke="#e4003a" stroke-width="4"/>
+        </svg>
+      </span>
+      <span class="brand__text"><span class="brand__dot">.</span>иностудио</span>
     </a>
-    <a class="btn btn--primary" href="https://job.bspb.ru/" target="_blank" rel="noopener">Смотреть сайт</a>
+
+    <nav class="nav" aria-label="Навигация по кейсу">
+      <a href="#about">О клиенте</a>
+      <a href="#background">Предпосылки</a>
+      <a href="#task">Задача</a>
+      <a href="#solution">Решение</a>
+      <a href="#result">Результат</a>
+      <a href="#tech">Технологии</a>
+    </nav>
+
+    <a class="btn btn--primary" href="https://job.bspb.ru/" target="_blank" rel="noopener"><span>Смотреть сайт</span></a>
   </div>
 </header>
 
 <main id="top">
 
   <!-- ================= HERO ================= -->
-  <section class="hero">
+  <section class="hero" id="hero">
+    <span class="hero__glow" aria-hidden="true"></span>
+    <span class="hero__glow hero__glow--b" aria-hidden="true"></span>
+
+    <div class="hero__shapes" aria-hidden="true">
+      <span class="orb orb--ring" style="width:210px;height:210px;right:6%;top:14%;color:#e4003a"></span>
+      <span class="orb" style="width:64px;height:64px;right:22%;top:34%;background:#fbbb21"></span>
+      <span class="orb" style="width:26px;height:26px;left:4%;top:22%;background:#169fdb"></span>
+      <span class="orb orb--ring" style="width:130px;height:130px;left:12%;bottom:8%;color:#169fdb"></span>
+      <span class="orb" style="width:16px;height:16px;right:12%;bottom:26%;background:#e4003a"></span>
+    </div>
+
     <div class="container">
       <nav class="breadcrumbs" aria-label="Хлебные крошки">
         <a href="#">Главная</a> <span>/</span> <a href="#">Кейсы</a> <span>/</span>
@@ -37,7 +73,12 @@
 
       <div class="hero__client">ПАО «Банк «Санкт-Петербург» (БСПБ)</div>
 
-      <h1>Карьерный сайт — платформа для привлечения кандидатов и развития HR-бренда</h1>
+      <h1 class="hero__title">
+        <span style="--i:1">Карьерный</span> <span style="--i:2">сайт</span> <span style="--i:3">—</span>
+        <span style="--i:4">платформа</span> <span style="--i:5">для</span> <span style="--i:6">привлечения</span>
+        <span style="--i:7">кандидатов</span> <span style="--i:8">и</span> <span style="--i:9">развития</span>
+        <span style="--i:10;color:#e4003a">HR-бренда</span>
+      </h1>
 
       <p class="hero__lead">
         Собственный карьерный сайт, который закрывает полный цикл взаимодействия с кандидатом: от знакомства
@@ -62,69 +103,71 @@
           <dd>job.bspb.ru</dd>
         </div>
       </dl>
+    </div>
 
+    <div class="container">
       <figure class="hero__shot">
         <img src="assets/img/career-site-hero.jpg" width="1280" height="729"
              alt="Главная страница карьерного сайта банка «Санкт-Петербург»">
+        <figcaption class="hero__chip">job.bspb.ru — <b>полный цикл найма</b></figcaption>
       </figure>
+      <div class="hero__scroll"><i aria-hidden="true"></i>Листайте вниз</div>
     </div>
   </section>
 
-  <!-- ================= НАВИГАЦИЯ ================= -->
-  <nav class="caselinks" aria-label="Навигация по кейсу">
-    <div class="container">
-      <ul>
-        <li><a href="#about">О клиенте</a></li>
-        <li><a href="#background">Предпосылки</a></li>
-        <li><a href="#task">Задача</a></li>
-        <li><a href="#solution">Решение</a></li>
-        <li><a href="#result">Результат</a></li>
-        <li><a href="#tech">Технологии</a></li>
-      </ul>
+  <!-- ================= БЕГУЩАЯ СТРОКА ================= -->
+  <div class="band" aria-hidden="true">
+    <div class="band__track">
+      <span>Пространство для людей, которым не всё равно</span>
+      <span>Команда мечты</span>
+      <span>Кейсы Иностудио</span>
+      <span>Санкт-Петербург · Москва</span>
+      <span>Пространство для людей, которым не всё равно</span>
+      <span>Команда мечты</span>
+      <span>Кейсы Иностудио</span>
+      <span>Санкт-Петербург · Москва</span>
     </div>
-  </nav>
+  </div>
 
   <!-- ================= ЦИФРЫ ================= -->
-  <div class="section--gray">
-    <div class="container">
-      <div class="facts reveal">
-        <div class="fact">
-          <div class="fact__value">30 лет</div>
-          <div class="fact__label">истории банка</div>
-        </div>
-        <div class="fact">
-          <div class="fact__value">5 млн+</div>
-          <div class="fact__label">частных клиентов БСПБ</div>
-        </div>
-        <div class="fact">
-          <div class="fact__value fact__value--red">2</div>
-          <div class="fact__label">лендинга стажёрских программ — на старте проекта</div>
-        </div>
-        <div class="fact">
-          <div class="fact__value fact__value--red">5</div>
-          <div class="fact__label">целей в комплексном запросе банка</div>
-        </div>
+  <div class="container">
+    <div class="facts">
+      <div class="fact fact--red" data-reveal>
+        <div class="fact__value" data-count="30" data-suffix=" лет">30 лет</div>
+        <div class="fact__label">истории банка</div>
+      </div>
+      <div class="fact fact--blue" data-reveal style="--delay:.08s">
+        <div class="fact__value" data-count="5" data-suffix=" млн+">5 млн+</div>
+        <div class="fact__label">частных клиентов БСПБ</div>
+      </div>
+      <div class="fact fact--green" data-reveal style="--delay:.16s">
+        <div class="fact__value" data-count="2">2</div>
+        <div class="fact__label">лендинга стажёрских программ — на старте проекта</div>
+      </div>
+      <div class="fact fact--violet" data-reveal style="--delay:.24s">
+        <div class="fact__value" data-count="5">5</div>
+        <div class="fact__label">целей в комплексном запросе банка</div>
       </div>
     </div>
   </div>
 
-
   <!-- ================= 01 О КЛИЕНТЕ ================= -->
   <section class="section" id="about">
     <div class="container">
-      <div class="section__head reveal">
-        <div class="section__index"><span></span>01 — О клиенте</div>
+      <div class="section__head" data-reveal>
+        <div class="section__index"><span class="section__num">01</span> О клиенте</div>
         <h2>Банк, для которого HR-бренд — инструмент найма</h2>
       </div>
+
       <div class="cols">
-        <div class="prose reveal">
+        <div class="prose" data-reveal="left">
           <p>
             Банк «Санкт-Петербург» (БСПБ) — один из крупнейших региональных банков России: 30 лет истории,
             более 5 миллионов частных клиентов. Для такой организации HR-бренд — не маркетинговое решение,
             а инструмент привлечения и найма.
           </p>
         </div>
-        <div class="prose reveal">
+        <div class="prose" data-reveal="right" style="--delay:.12s">
           <p>
             Решение было логичным: уйти от зависимости от job-бордов и создать собственный карьерный сайт,
             который закрывает полный цикл взаимодействия с кандидатом — от знакомства с брендом работодателя
@@ -136,15 +179,15 @@
   </section>
 
   <!-- ================= 02 ПРЕДПОСЫЛКИ ================= -->
-  <section class="section section--gray" id="background">
+  <section class="section section--soft" id="background">
     <div class="container">
-      <div class="section__head reveal">
-        <div class="section__index"><span></span>02 — Предпосылки</div>
+      <div class="section__head" data-reveal>
+        <div class="section__index"><span class="section__num section__num--blue">02</span> Предпосылки</div>
         <h2>Что подтолкнуло к поиску решения?</h2>
       </div>
 
       <div class="cols">
-        <div class="prose reveal">
+        <div class="prose" data-reveal="left">
           <p>
             Конкуренция за таланты усилилась: затраты на внешние рекрутинговые сервисы растут, а конверсия
             просмотра вакансий в отклик остаётся низкой. Карьерная страница на продуктовом сайте не отражала
@@ -155,7 +198,7 @@
             пиар-кампаниями он оставался «тёмной лошадкой».
           </p>
         </div>
-        <div class="prose reveal">
+        <div class="prose" data-reveal="right" style="--delay:.12s">
           <p>
             <strong>Старт был быстрым.</strong> Пока идея полноценного сайта согласовывалась, банку срочно
             потребовалась кампания по привлечению молодых специалистов на стажировки — сбор заявок важно было
@@ -169,15 +212,19 @@
         </div>
       </div>
 
-      <div class="shots reveal">
-        <figure class="shot">
-          <img src="assets/img/landing-braincamp.jpg" width="1280" height="889"
-               alt="Лендинг стажёрской программы BrainCamp">
+      <div class="shots">
+        <figure class="shot" data-reveal="clip">
+          <div class="shot__media">
+            <img src="assets/img/landing-braincamp.jpg" width="1280" height="889"
+                 alt="Лендинг стажёрской программы BrainCamp">
+          </div>
           <figcaption class="shot__caption">«BrainCamp» — стажировки в IT-направлениях</figcaption>
         </figure>
-        <figure class="shot">
-          <img src="assets/img/landing-connect.jpg" width="1280" height="889"
-               alt="Лендинг стажёрской программы БСПБ Connect">
+        <figure class="shot" data-reveal="clip" style="--delay:.15s">
+          <div class="shot__media">
+            <img src="assets/img/landing-connect.jpg" width="1280" height="889"
+                 alt="Лендинг стажёрской программы БСПБ Connect">
+          </div>
           <figcaption class="shot__caption">«БСПБ Connect» — финансы, HR, маркетинг, юриспруденция</figcaption>
         </figure>
       </div>
@@ -187,15 +234,15 @@
   <!-- ================= 03 ЗАДАЧА ================= -->
   <section class="section" id="task">
     <div class="container">
-      <div class="section__head reveal">
-        <div class="section__index"><span></span>03 — Задача</div>
+      <div class="section__head" data-reveal>
+        <div class="section__index"><span class="section__num section__num--green">03</span> Задача</div>
         <h2>Комплексный запрос банка</h2>
         <p class="section__lead">
-          Банк обратился к «Иностудио» за разработкой карьерного сайта. Комплексный запрос включал конкретные цели:
+          Банк обратился в «Иностудио» за разработкой карьерного сайта. Комплексный запрос включал конкретные цели:
         </p>
       </div>
 
-      <ol class="tasks reveal">
+      <ol class="tasks" data-reveal>
         <li>Укрепление и развитие имиджа работодателя, презентация карьерных возможностей и ценностного
             предложения на доступном для кандидатов языке.</li>
         <li>Сокращение числа этапов от первого контакта до отклика на вакансию.</li>
@@ -208,10 +255,10 @@
   </section>
 
   <!-- ================= 04 РЕШЕНИЕ ================= -->
-  <section class="section section--gray" id="solution">
+  <section class="section section--soft" id="solution">
     <div class="container">
-      <div class="section__head reveal">
-        <div class="section__index"><span></span>04 — Решение</div>
+      <div class="section__head" data-reveal>
+        <div class="section__index"><span class="section__num section__num--yellow">04</span> Решение</div>
         <h2>Карьерный сайт «с нуля»</h2>
         <p class="section__lead">
           Команда «Иностудио» разработала сайт от архитектуры и дизайна до развёртывания в инфраструктуре банка.
@@ -220,7 +267,7 @@
 
       <div class="steps">
 
-        <article class="step reveal">
+        <article class="step" data-reveal>
           <div class="step__num">01</div>
           <div class="step__text">
             <span class="step__label">Путь кандидата</span>
@@ -236,15 +283,17 @@
             </p>
           </div>
           <div class="step__media">
-            <figure class="shot">
-              <img src="assets/img/career-site-candidate-path.jpg" width="1280" height="601"
-                   alt="Блок «Путь кандидата» на карьерном сайте БСПБ">
+            <figure class="shot" data-reveal="clip" style="--delay:.1s">
+              <div class="shot__media">
+                <img src="assets/img/career-site-candidate-path.jpg" width="1280" height="601"
+                     alt="Блок «Путь кандидата» на карьерном сайте БСПБ">
+              </div>
               <figcaption class="shot__caption">Блок «Путь кандидата»: от отклика до оффера</figcaption>
             </figure>
           </div>
         </article>
 
-        <article class="step reveal">
+        <article class="step" data-reveal>
           <div class="step__num">02</div>
           <div class="step__text">
             <span class="step__label">Геймификация</span>
@@ -258,17 +307,43 @@
               e-mail и получает приз — чек-лист по составлению резюме. Банк получает контакт потенциального
               кандидата, а соискатель — доверие к работодателю.
             </p>
+
+            <div class="quiz" id="quiz">
+              <div class="quiz__head">
+                <span class="quiz__label">Попробуйте: 3 вопроса</span>
+                <span class="quiz__dots" id="quizDots" aria-hidden="true"><i></i><i></i><i></i></span>
+              </div>
+
+              <div class="quiz__body">
+                <p class="quiz__q" id="quizQ">Вопрос загружается…</p>
+                <div class="quiz__options" id="quizOptions">
+                  <button class="quiz__opt" type="button" data-answer="city">Город</button>
+                  <button class="quiz__opt" type="button" data-answer="bank">Банк</button>
+                </div>
+                <p class="quiz__feedback" id="quizFeedback"></p>
+              </div>
+
+              <div class="quiz__result">
+                <div class="quiz__score"><span id="quizScore">0</span>/3<small id="quizVerdict"></small></div>
+                <div class="quiz__actions">
+                  <button class="btn btn--dark" type="button" id="quizRestart"><span>Сыграть ещё раз</span></button>
+                  <a class="btn btn--primary" href="https://job.bspb.ru/" target="_blank" rel="noopener"><span>Смотреть сайт</span></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="step__media">
-            <figure class="shot">
-              <img src="assets/img/career-site-quiz.jpg" width="1280" height="800"
-                   alt="Интерактивная викторина «Санкт-Петербург: город или банк?»">
+            <figure class="shot" data-reveal="clip" style="--delay:.16s">
+              <div class="shot__media">
+                <img src="assets/img/career-site-quiz.jpg" width="1280" height="800"
+                     alt="Интерактивная викторина «Санкт-Петербург: город или банк?»">
+              </div>
               <figcaption class="shot__caption">Викторина: кнопка «Начать игру» на каждой странице</figcaption>
             </figure>
           </div>
         </article>
 
-        <article class="step reveal">
+        <article class="step" data-reveal>
           <div class="step__num">03</div>
           <div class="step__text">
             <span class="step__label">Автоматизация HR-процессов</span>
@@ -280,9 +355,11 @@
             </p>
           </div>
           <div class="step__media">
-            <figure class="shot">
-              <img src="assets/img/career-site-vacancy-detail.jpg" width="1280" height="1067"
-                   alt="Страница вакансии с формой отклика на карьерном сайте БСПБ">
+            <figure class="shot" data-reveal="clip" style="--delay:.12s">
+              <div class="shot__media">
+                <img src="assets/img/career-site-vacancy-detail.jpg" width="1280" height="1067"
+                     alt="Страница вакансии с формой отклика на карьерном сайте БСПБ">
+              </div>
               <figcaption class="shot__caption">Форма отклика — на странице с описанием вакансии</figcaption>
             </figure>
           </div>
@@ -290,17 +367,28 @@
 
       </div>
 
-      <div class="highlight reveal">
+      <div class="highlight" data-reveal>
+        <svg class="highlight__rings" viewBox="0 0 300 300" aria-hidden="true">
+          <g fill="none" stroke="#ffffff" stroke-width="1.5">
+            <circle cx="150" cy="150" r="34"/>
+            <circle cx="150" cy="150" r="62"/>
+            <circle cx="150" cy="150" r="90"/>
+            <circle cx="150" cy="150" r="118"/>
+            <circle cx="150" cy="150" r="146"/>
+          </g>
+        </svg>
+
         <div>
           <span class="step__label">Защищённый контур</span>
           <h3>Развёртывание в инфраструктуре банка</h3>
           <p>
-            Технически насыщенная задача, но рабочая для «Иностудио»: настроили TLS 1.3 и WAF (PTAF), подключили
-            авторизацию через SSO, организовали аудит-лог и контроль доступа. Персональные данные кандидатов
-            остаются внутри контура банка, в PostgreSQL и S3, по требованиям Департамента информационной
-            безопасности.
+            Технически насыщенная задача, но рабочая для команды «Иностудио»: настроили TLS 1.3 и WAF (PTAF),
+            подключили авторизацию через SSO, организовали аудит-лог и контроль доступа. Персональные данные
+            кандидатов остаются внутри контура банка, в PostgreSQL и S3, по требованиям Департамента
+            информационной безопасности.
           </p>
         </div>
+
         <ul class="tags">
           <li>TLS 1.3</li>
           <li>WAF (PTAF)</li>
@@ -315,10 +403,10 @@
   </section>
 
   <!-- ================= 05 РЕЗУЛЬТАТ ================= -->
-  <section class="section section--dark" id="result">
+  <section class="section section--graphite" id="result">
     <div class="container">
-      <div class="section__head reveal">
-        <div class="section__index"><span></span>05 — Результат</div>
+      <div class="section__head" data-reveal>
+        <div class="section__index"><span class="section__num section__num--pink">05</span> Результат</div>
         <h2>Сайт, который решает задачи на двух уровнях</h2>
         <p class="section__lead">
           Банк «Санкт-Петербург» получил современный карьерный сайт, работающий и на кандидата, и на бизнес.
@@ -326,7 +414,7 @@
       </div>
 
       <div class="results">
-        <div class="result-card reveal">
+        <div class="result-card" data-reveal="left">
           <span class="result-card__tag">Для кандидата</span>
           <h3>Живой и вовлекающий ресурс</h3>
           <p>
@@ -334,7 +422,7 @@
             от отклика до оффера и геймификация, превращающая знакомство с банком в запоминающийся опыт.
           </p>
         </div>
-        <div class="result-card reveal">
+        <div class="result-card" data-reveal="right" style="--delay:.12s">
           <span class="result-card__tag">Для бизнеса</span>
           <h3>Дополнительный канал найма</h3>
           <p>
@@ -345,8 +433,10 @@
         </div>
       </div>
 
-      <div class="cta reveal">
-        <a class="btn btn--primary" href="https://job.bspb.ru/" target="_blank" rel="noopener">Посмотреть результат: job.bspb.ru</a>
+      <div class="cta" data-reveal>
+        <a class="btn btn--primary" href="https://job.bspb.ru/" target="_blank" rel="noopener">
+          <span>Посмотреть результат: job.bspb.ru</span>
+        </a>
         <span class="cta__note">Сайт работает в защищённом контуре банка.</span>
       </div>
     </div>
@@ -355,12 +445,13 @@
   <!-- ================= 06 ТЕХНОЛОГИИ ================= -->
   <section class="section" id="tech">
     <div class="container">
-      <div class="section__head reveal">
-        <div class="section__index"><span></span>06 — Технологии</div>
+      <div class="section__head" data-reveal>
+        <div class="section__index"><span class="section__num section__num--violet">06</span> Технологии</div>
         <h2>Интеграции и инфраструктура</h2>
       </div>
+
       <div class="tech-grid">
-        <div class="reveal">
+        <div data-reveal>
           <h3>Интеграции</h3>
           <ul class="tags">
             <li>Skillaz</li>
@@ -369,7 +460,7 @@
             <li>Yandex Cloud Logging</li>
           </ul>
         </div>
-        <div class="reveal">
+        <div data-reveal style="--delay:.12s">
           <h3>Инфраструктура</h3>
           <ul class="tags">
             <li>Яндекс Облако</li>
@@ -386,11 +477,28 @@
 </main>
 
 <footer class="footer">
-  <div class="container footer__inner">
-    <div>Кейс подготовлен командой «Иностудио» · Банк «Санкт-Петербург», 2026</div>
-    <a href="https://job.bspb.ru/" target="_blank" rel="noopener">job.bspb.ru</a>
+  <div class="band band--soft" aria-hidden="true">
+    <div class="band__track">
+      <span>Кейс · карьерный сайт банка «Санкт-Петербург»</span>
+      <span>Иностудио · 2026</span>
+      <span>Кейс · карьерный сайт банка «Санкт-Петербург»</span>
+      <span>Иностудио · 2026</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="footer__inner" style="margin-top:40px">
+      <a class="brand" href="#top" style="color:#fff">
+        <span class="brand__text"><span class="brand__dot">.</span>иностудио</span>
+      </a>
+      <div>Кейс подготовлен командой Иностудио · Банк «Санкт-Петербург», 2026</div>
+      <a href="https://job.bspb.ru/" target="_blank" rel="noopener">job.bspb.ru</a>
+    </div>
+    <span class="footer__big" aria-hidden="true">.иностудио</span>
   </div>
 </footer>
+
+<button class="totop" id="totop" type="button" aria-label="Наверх">↑</button>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр скриншота">
   <img alt="Увеличенный скриншот сайта">
