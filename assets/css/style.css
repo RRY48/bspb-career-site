@@ -179,6 +179,8 @@ strong { font-weight: 600; }
   letter-spacing: -0.02em;
 }
 
+.preloader__logo { display: block; height: 34px; width: auto; }
+
 .preloader__ring {
   width: 54px;
   height: 54px;
@@ -222,27 +224,19 @@ strong { font-weight: 600; }
 
 .topbar.is-scrolled .topbar__inner { min-height: 64px; }
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 19px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  text-decoration: none;
-  white-space: nowrap;
+.brand { display: inline-flex; align-items: center; text-decoration: none; }
+
+.brand__logo {
+  display: block;
+  height: 38px;
+  width: auto;
+  transition: height 0.35s var(--ease-out), transform 0.35s var(--ease-out);
 }
 
-.brand__dot { color: var(--red); animation: pulseDot 2.8s var(--ease-soft) infinite; }
+.topbar.is-scrolled .brand__logo { height: 32px; }
+.brand:hover .brand__logo { transform: scale(1.03); }
 
-@keyframes pulseDot {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
-
-.brand__mono { display: inline-grid; place-items: center; width: 34px; height: 34px; }
-
-.brand__text { display: inline-flex; align-items: baseline; }
+.brand__logo--footer { height: 46px; }
 
 .nav { display: flex; align-items: center; gap: 4px; }
 
